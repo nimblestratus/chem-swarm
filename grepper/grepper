@@ -1,0 +1,8 @@
+#!/bin/ash
+
+PATH=/bin:/usr/bin
+
+# ls $DIR | xargs -n 50 -P 4 grep -h "PATTERN" 
+cd /data
+ls | xargs -n 50 -P 4 /usr/bin/grep -h $PATTERN
+ 
